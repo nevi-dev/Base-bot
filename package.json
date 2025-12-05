@@ -13,7 +13,7 @@
     "bot",
     "nodejs"
   ],
-  "author": "Tu Nombre",
+  "author": "Nevi-dev",
   "license": "ISC",
   "dependencies": {
     "@whiskeysockets/baileys": "7.0.0-rc.9",
