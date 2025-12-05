@@ -4,7 +4,7 @@
  */
 
 // 1. Definiciones de requisitos (Handlers)
-exports.handler = {
+export const handler = {
     // El comando será 'p'
     comando: ['p', 'ping'], 
     categoria: ['utilidad'],
@@ -24,13 +24,13 @@ exports.handler = {
 };
 
 // 2. Función principal que se ejecuta si todas las comprobaciones pasan
-exports.run = async (sock, mensaje, args) => {
+export async function run(sock, mensaje, args) {
     // 1. Capturar el tiempo inicial (antes de procesar y enviar)
     const startTime = Date.now();
 
     // 2. Enviar el mensaje de respuesta
     const response = await sock.sendMessage(mensaje.key.remoteJid, { 
-        text: 'Pong!' 
+        text: 'Pong! ⏳' 
     });
 
     // 3. Capturar el tiempo final y calcular la diferencia
@@ -44,11 +44,11 @@ exports.run = async (sock, mensaje, args) => {
         quoted: mensaje // Responder citando el mensaje 'p'
     });
     
-    // Opcional: Si quieres editar el primer mensaje "Pong!" en lugar de enviar uno nuevo:
+    // Si quisieras editar el mensaje en lugar de enviar uno nuevo, usarías esto:
     /*
     await sock.sendMessage(mensaje.key.remoteJid, {
         text: `Pong! 🏓\nTiempo de respuesta: *${latency} ms*`,
         edit: response.key
     });
     */
-};
+}
