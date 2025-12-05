@@ -1,5 +1,5 @@
 // index.js
-const { default: makeWASocket, useMultiFileAuthState, DisconnectReason, Browsers, is=Message, fetchLatestBaileysVersion } = require('@adiwajshing/baileys');
+const { default: makeWASocket, useMultiFileAuthState, DisconnectReason, Browsers, is=Message, fetchLatestBaileysVersion } = require('@whiskeysockets/baileys');
 const { handleMessage } = require('./handler');
 const { NOMBRE_BOT, VERSION, LIMPIEZA_TMP_MS } = require('./settings');
 const fs = require('fs');
