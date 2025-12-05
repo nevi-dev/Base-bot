@@ -8,7 +8,7 @@ import {
 } from '@whiskeysockets/baileys';
 import { handleMessage } from './handler.js';
 import settings from './settings.js'; 
-const { NOMBRE_BOT, PREFIJOS } = settings;
+const { NOMBRE_BOT, PREFIJOS, VERSION, LIMPIEZA_TMP_MS } = settings;
 import fs from 'fs';
 import path from 'path';
 import chalk from 'chalk';
