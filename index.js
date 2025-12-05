@@ -4,8 +4,7 @@ import {
     useMultiFileAuthState, 
     DisconnectReason, 
     fetchLatestBaileysVersion,
-    makeCacheableSignalKeyStore,
-    isJidUser
+    makeCacheableSignalKeyStore
 } from '@whiskeysockets/baileys';
 import { handleMessage } from './handler.js';
 import settings from './settings.js'; 
