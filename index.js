@@ -8,7 +8,8 @@ import {
     isJidUser
 } from '@whiskeysockets/baileys';
 import { handleMessage } from './handler.js';
-import { NOMBRE_BOT, VERSION, LIMPIEZA_TMP_MS } from './settings.js';
+import settings from './settings.js'; 
+const { NOMBRE_BOT, PREFIJOS } = settings;
 import fs from 'fs';
 import path from 'path';
 import chalk from 'chalk';
