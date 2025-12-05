@@ -1,5 +1,12 @@
 // index.js
-const { default: makeWASocket, useMultiFileAuthState, DisconnectReason, Browsers, is=Message, fetchLatestBaileysVersion } = require('@whiskeysockets/baileys');
+const { 
+    default: makeWASocket, 
+    useMultiFileAuthState, 
+    DisconnectReason, 
+    Browsers, 
+    isMessage, // <-- CORREGIDO: Usar el nombre de la función exportada (isMessage)
+    fetchLatestBaileysVersion 
+} = require('@whiskeysockets/baileys');
 const { handleMessage } = require('./handler');
 const { NOMBRE_BOT, VERSION, LIMPIEZA_TMP_MS } = require('./settings');
 const fs = require('fs');
