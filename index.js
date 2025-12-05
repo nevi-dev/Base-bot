@@ -14,6 +14,7 @@ import path from 'path';
 import chalk from 'chalk';
 import qrcode from 'qrcode'; // Necesitarás 'qrcode' para el QR
 import readline from 'readline'; // Para interactuar con la consola
+import pino from 'pino';
 
 const sessionPath = './sessions';
 const tmpPath = './tmp';
