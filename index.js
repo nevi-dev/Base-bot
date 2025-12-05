@@ -4,7 +4,7 @@ const {
     useMultiFileAuthState, 
     DisconnectReason, 
     Browsers, 
-    isMessage, // <-- CORREGIDO: Usar el nombre de la función exportada (isMessage)
+    isMessage,
     fetchLatestBaileysVersion 
 } = require('@whiskeysockets/baileys');
 const { handleMessage } = require('./handler');
